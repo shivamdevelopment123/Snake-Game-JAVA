@@ -16,8 +16,8 @@ Prerequisites
 How to Run
 
     Clone this repository:
-
-git clone https://github.com/your-username/snake-game.git
+    
+git clone https://github.com/shivamtechstack/Snake-Game-JAVA.git
 
 Open the project in your Java IDE or compile it using the terminal:
 
