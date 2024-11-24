@@ -16,5 +16,6 @@ public class Main {
         GamePanel gamePanel = new GamePanel(windowWidth, windowHeight);
         frame.add(gamePanel);
         frame.pack();
+        gamePanel.requestFocus();
     }
 }
