@@ -95,8 +95,51 @@ class GamePanel extends JPanel implements ActionListener, KeyListener {
             repaint();
         } else {
             gameLoop.stop();
+            showGameOverScreen();
         }
     }
+
+    private void showGameOverScreen() {
+        JPanel gameOverPanel = new JPanel();
+        gameOverPanel.setLayout(new GridBagLayout());
+        gameOverPanel.setOpaque(false);
+        gameOverPanel.setBackground(new Color(0, 0, 0, 150));
+
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10);
+
+        JLabel gameOverLabel = new JLabel("Game Over");
+        gameOverLabel.setForeground(Color.RED);
+        gameOverLabel.setFont(new Font("Arial", Font.BOLD, 36));
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gameOverPanel.add(gameOverLabel, gbc);
+
+        JLabel scoreLabel = new JLabel("Score: " + score);
+        scoreLabel.setForeground(Color.WHITE);
+        scoreLabel.setFont(new Font("Arial", Font.PLAIN, 24));
+        gbc.gridy = 1;
+        gameOverPanel.add(scoreLabel, gbc);
+
+        JButton replayButton = new JButton("Replay");
+        replayButton.setPreferredSize(new Dimension(100, 50));
+        gbc.gridy = 2;
+        gameOverPanel.add(replayButton, gbc);
+
+        replayButton.addActionListener(e -> {
+            frame.getContentPane().removeAll();
+            GamePanel newGamePanel = new GamePanel(frame, windowWidth, windowHeight);
+            frame.add(newGamePanel);
+            frame.revalidate();
+            newGamePanel.requestFocus();
+        });
+
+        setLayout(new OverlayLayout(this));
+        add(gameOverPanel);
+        revalidate();
+        repaint();
+    }
+
 
     @Override
     public void paintComponent(Graphics g) {

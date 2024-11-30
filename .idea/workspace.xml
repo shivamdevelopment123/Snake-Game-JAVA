@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80215471-9876-43f3-b3af-c4aa2c0aaf81" name="Changes" comment="game logic created..">
+    <list default="true" id="80215471-9876-43f3-b3af-c4aa2c0aaf81" name="Changes" comment="Main Dashboard added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732419526611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Main Dashboard added">
+      <option name="closed" value="true" />
+      <created>1732900822383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732900822383</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +120,7 @@
     <MESSAGE value="&quot;Project Created&quot;" />
     <MESSAGE value="gamepanel, snakehead and coordinates." />
     <MESSAGE value="game logic created.." />
-    <option name="LAST_COMMIT_MESSAGE" value="game logic created.." />
+    <MESSAGE value="Main Dashboard added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main Dashboard added" />
   </component>
 </project>
